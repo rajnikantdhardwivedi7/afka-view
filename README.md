@@ -1,17 +1,11 @@
 kafka-view
 ==========
 
-[![Build Status](https://travis-ci.org/fede1024/kafka-view.svg?branch=master)](https://travis-ci.org/fede1024/kafka-view)
-[![Docker Image](https://img.shields.io/docker/pulls/fede1024/kafka-view.svg?maxAge=2592000)](https://hub.docker.com/r/fede1024/kafka-view/)
-[![Join the chat at https://gitter.im/rust-rdkafka/Lobby](https://badges.gitter.im/rust-rdkafka/Lobby.svg)](https://gitter.im/rust-rdkafka/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 Kafka-view is an experimental web interface for Kafka written in Rust.
 Kafka-view creates and maintains a materialized view of the internal state of
 Kafka including cluster metadata, traffic metrics, group membership, consumer
-offsets etc. It uses the [rdkafka](https://github.com/fede1024/rust-rdkafka)
+offsets etc. It uses the
 Kafka client library for Rust, and [rocket](https://rocket.rs/).
-
-Click [here](https://github.com/fede1024/kafka-view#screenshots) for screenshots.
 
 Kafka-view supports multiple clusters and implements a fast search
 functionality to quickly find a topic or consumer group by name or by regex,
@@ -55,7 +49,6 @@ kafka-topics.sh --zookeeper <zk> --alter --topic <cache_topic_name> --config cle
 kafka-topics.sh --zookeeper <zk> --alter --topic <cache_topic_name> --config segment.bytes=10485760
 ```
 
-[example configuration file]: https://github.com/fede1024/kafka-view/blob/master/exampleConfig.yaml
 
 ### Building and running
 
