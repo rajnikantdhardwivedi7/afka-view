@@ -134,10 +134,6 @@ model will allow kafka-view to run in clustered mode, where multiple kafka-view
 instances will work together to poll data from Kafka and will share the
 information using the compacted topic.
 
-## Contributors
-
-Thanks to:
-* [messense](https://github.com/messense)
 
 ## Screenshots
 
